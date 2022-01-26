@@ -1,0 +1,57 @@
+[
+  {
+      "id": 1,
+      "BusCode": "TG-B-01",
+      "Destination": "Yaao International Hotel Bejing",
+      "leavingtime": 20,
+      "comment": "Thanks"
+  },
+  {
+      "id": 2,
+      "BusCode": "TG-B-02",
+      "Destination": "CNCC - China National Conventtion Center Grand Hotel",
+      "leavingtime": 40
+  },
+  {
+      "id": 3,
+      "BusCode": "TG-B-08",
+      "Destination": "Hotel Nikko New Century Beijing",
+      "leavingtime": 60
+  },
+  {
+      "id": 4,
+      "BusCode": "TG-B-11",
+      "Destination": "Crowne Plaza Beijing Sun Palace",
+      "leavingtime": 60
+  },
+  {
+      "id": 5,
+      "BusCode": "TG-B-12",
+      "Destination": "North Star Yayuncun Hotel",
+      "leavingtime": 60
+  },
+  {
+      "id": 6,
+      "BusCode": "TG-B-13",
+      "Destination": "Grand Skylight Catic Hotel Beijing",
+      "leavingtime": 60
+  },
+  {
+      "id": 7,
+      "BusCode": "TG-B-14",
+      "Destination": "Marco Polo Parkside Beijing",
+      "leavingtime": 60
+  },
+  {
+      "id": 8,
+      "BusCode": "TG-B-16",
+      "Destination": "National Jade Hotel",
+      "leavingtime": 60
+  },
+  {
+      "id": 9,
+      "BusCode": "TG-B-18",
+      "Destination": "Beijing Changbaishan International Hotel",
+      "leavingtime": 60
+  }
+]
