@@ -6,7 +6,7 @@ const Shuttle = () => {
   let minute = new Date().getMinutes()
   let leavingMinute = 0
  // const leavingtime = Data[0].leavingtime
- // console.log(leavingtime)
+  console.log(leavingMinute)
 
   const CheckTime = () => {
     let hour = new Date().getHours()
@@ -21,27 +21,27 @@ const Shuttle = () => {
     }
   }
 
-
+  console.log(leavingMinute)
   
   //console.log(leavingMinute)
   
   const [newMinute, setNewMinute] = useState(minute)
-
+  
   const UpdateMinute = () => {
     minute = new Date().getMinutes()
-    CheckTime(minute)
+    
     setNewMinute(leavingMinute-minute)
   }
 
   //const CorrectLeavingTime = () => {
   //  const leavingMinute = Data.leavingtime
-    
-  
 
   setInterval(
     UpdateMinute,
-     
-    5000)
+    CheckTime(),
+    59000)
+
+  console.log(leavingMinute)
 
   return (
     <div>
@@ -52,6 +52,7 @@ const Shuttle = () => {
               <h3>{item.BusCode}</h3>
               <h4>{item.Destination}</h4>
               <h5>Next Shuttle will leave in: {newMinute} minutes</h5>
+              <h5>Shuttles are every {} minutes</h5>
           </div>
           
         )
