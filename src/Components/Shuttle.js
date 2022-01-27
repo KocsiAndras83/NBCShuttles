@@ -1,12 +1,21 @@
 import React, {useState} from 'react'
 import Data from "../ShuttleTimes/shuttleTimes.json"
+import Yaoo from "../ShuttleTimes/YaaoInternational.json"
+
+let leavingTime1 = Data[0].leavingtimes[0].slice(3,5)
+console.log(leavingTime1)
+
+let leavingTime2 = Yaoo[0].leavingtimes[1].slice(3,5)
+console.log(leavingTime2)
 
 const Shuttle = () => {
   
   let minute = new Date().getMinutes()
   let leavingMinute = 0
- // const leavingtime = Data[0].leavingtime
-  console.log(leavingMinute)
+
+  
+  
+
 
   const CheckTime = () => {
     let hour = new Date().getHours()
@@ -21,27 +30,21 @@ const Shuttle = () => {
     }
   }
 
-  console.log(leavingMinute)
   
-  //console.log(leavingMinute)
   
   const [newMinute, setNewMinute] = useState(minute)
   
   const UpdateMinute = () => {
     minute = new Date().getMinutes()
-    
     setNewMinute(leavingMinute-minute)
   }
-
-  //const CorrectLeavingTime = () => {
-  //  const leavingMinute = Data.leavingtime
 
   setInterval(
     UpdateMinute,
     CheckTime(),
     59000)
 
-  console.log(leavingMinute)
+  
 
   return (
     <div>
