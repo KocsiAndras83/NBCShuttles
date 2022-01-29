@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import getNextShuttles from '../utils/getNextShuttles'
 import Data from "../ShuttleTimes/shuttleTimes.json"
 import Yaoo from "../ShuttleTimes/YaaoInternational.json"
 
@@ -7,6 +8,8 @@ console.log(leavingTime1)
 
 let leavingTime2 = Yaoo[0].leavingtimes[1].slice(3,5)
 console.log(leavingTime2)
+
+getNextShuttles(Data)
 
 const Shuttle = () => {
   
@@ -42,7 +45,8 @@ const Shuttle = () => {
   setInterval(
     UpdateMinute,
     CheckTime(),
-    59000)
+    59000
+  )
 
   
 
@@ -51,7 +55,7 @@ const Shuttle = () => {
       { Data.map(item => {
 
         return(
-          <div>
+          <div key={item.BusCode}>
               <h3>{item.BusCode}</h3>
               <h4>{item.Destination}</h4>
               <h5>Next Shuttle will leave in: {newMinute} minutes</h5>
