@@ -13,7 +13,6 @@ const getNextShuttles = (data) => {
     }
 
     for(let time of leavingtimes) {
-      console.log(time)
       if(createTime(time) > timeNow) {
         shuttle.leavingTime = time
         break
