@@ -12,6 +12,7 @@ const getNextShuttles = (data) => {
       busCode: hotelShuttles.BusCode
     }
 
+    // search the next leavingtime
     for(let time of leavingtimes) {
       if(createTime(time) > timeNow) {
         shuttle.leavingTime = time
@@ -25,7 +26,7 @@ const getNextShuttles = (data) => {
   return nextShuttles
 }
 
-
+// create "getTime()" format for today from hh:mm
 const createTime = (time) => {
   const date = new Date()
   time = time.split(":")
