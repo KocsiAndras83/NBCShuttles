@@ -47,7 +47,7 @@ const Shuttle = () => {
       { Data.map(item => {
 
         return(
-            <div className="shuttle">
+            <div className="shuttle" key={item.BusCode}>
               <h1>{item.BusCode}</h1>
               <h2>{item.Destination}</h2>
               <h2>Next Shuttle will leave in: {newMinute} minutes</h2>
