@@ -1,30 +1,54 @@
 
 .App {
-  background-color: lightblue;
+  position: relative;
+  background-color: rgb(84, 134, 199, 0.5);
   box-sizing: border-box;
-  height: 825px;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
+  
 }
 
+.App::before {
+  content: "";
+  background-image: url("/src/Background/NBC_Peacock_logo_2013_svg.png");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+
+
 h1 {
+  position: relative;
   text-align: center;
-  color: blue;
+  color: rgb(34, 34, 39);
   font-size: 48px;
   padding: 5px;
 }
 
 h2 {
+  position: relative;
   padding: 5px;
 }
 
+h3 h5 h6 {
+  position: relative;
+}
+
 h4 {
+  position: relative;
   margin-top: 4rem;
 }
 
 .time{
+  position: relative;;
   text-align: center;
-  color: blue;
+  color: rgb(34, 34, 39);
   width: 250px;
   font-size: 30px;
   font-weight: 600;
@@ -34,7 +58,7 @@ h4 {
 }
 
 .shuttle{
-  background-color: rgba(180, 178, 178, 0.294);
+  background-color: rgba(180, 178, 178);
   text-align: center;
   float: left;
   margin: 25px;
