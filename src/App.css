@@ -1,5 +1,53 @@
+
 .App {
+  background-color: lightblue;
+  box-sizing: border-box;
+  height: 825px;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
   text-align: center;
+  color: blue;
+  font-size: 48px;
+  padding: 5px;
+}
+
+h2 {
+  padding: 5px;
+}
+
+h4 {
+  margin-top: 4rem;
+}
+
+.time{
+  text-align: center;
+  color: blue;
+  width: 250px;
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  top: 16px;
+  right: 5px;
+}
+
+.shuttle{
+  background-color: rgba(180, 178, 178, 0.294);
+  text-align: center;
+  float: left;
+  margin: 25px;
+  padding: 3px;
+  border-radius: 5%;
+  height: 80%;
+  width: 30%;
+  overflow: hidden;
+}
+
+.shuttle-container{
+  height: 750px;
+  overflow: hidden;
 }
 
 

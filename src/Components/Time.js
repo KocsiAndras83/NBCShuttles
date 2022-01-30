@@ -11,10 +11,10 @@ const Time = () => {
     setCurrentTime(timeNow)
   }
 
-  setInterval(UpdateTime, 1000)
+  setInterval(UpdateTime, 1000) 
 
   return (
-    <div>
+    <div className="time">
       <p>{currentTime}</p>
     </div>
   )
